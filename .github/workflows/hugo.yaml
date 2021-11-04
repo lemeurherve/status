@@ -22,16 +22,16 @@ jobs:
       uses: Cyb3r-Jak3/html5validator-action
       with:
         root: public/
-    # - name: html-validator
-    #   uses: anishathalye/proof-html@v1
-    #   with:
-    #     directory: ./public
-    #     check_favicon: false
-    #     check_external_hash: false
-    #     enforce_https: false
-    #     url_ignore: |
-    #       https://jira.jenkins.io
-    #       https://hackmd.io/cH4rbENeSOGLHD3rAgnXqQ?both
-    #     url_ignore_re: |
-    #       status.jenkins.io
-    #       /affected/
+    - name: html-validator
+      uses: anishathalye/proof-html@v1
+      with:
+        directory: ./public
+        check_favicon: false
+        check_external_hash: false
+        enforce_https: false
+        url_ignore: |
+          https://jira.jenkins.io
+          https://hackmd.io/cH4rbENeSOGLHD3rAgnXqQ?both
+        url_ignore_re: |
+          status.jenkins.io
+          /affected/
