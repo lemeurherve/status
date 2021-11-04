@@ -26,3 +26,6 @@ jobs:
         enforce_https: false
         url_ignore: |
           https://jira.jenkins.io
+        url_ignore_re: |
+          status.jenkins.io
+          /affected/
