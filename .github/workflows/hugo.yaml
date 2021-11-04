@@ -24,3 +24,5 @@ jobs:
         check_favicon: false
         check_external_hash: false
         enforce_https: false
+        url_ignore: |
+          https://jira.jenkins.io
