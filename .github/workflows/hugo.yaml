@@ -18,3 +18,6 @@ jobs:
         version: 0.87.0
          # "ext-" for the Hugo extended edition including git (https://github.com/klakegg/docker-hugo/blob/master/README.md#hugo-extended-edition)
         image: ext-asciidoctor
+    - uses: anishathalye/proof-html@v1
+      with:
+        directory: ./public
